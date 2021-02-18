@@ -1,0 +1,18 @@
+package com.rule
+
+import com.mx.example.model.Product
+
+rule "Offer for Diamond"
+	when 
+		productObject: Product(type=="diamond")
+	then
+		productObject.setDiscount(15);
+		productObject.setDetalle("Es un diamante");
+	end
+rule "Offer for Gold"
+	when 
+		productObject: Product(type=="gold")
+	then
+		productObject.setDiscount(25);
+		productObject.setDetalle("Es Oro");
+	end
