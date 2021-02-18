@@ -15,6 +15,7 @@ import com.mx.example.model.Product;
 
 public class DroolsTest {
 
+	
 	public static void main(String[] args) throws DroolsParserException,
 	IOException {
 		DroolsTest droolsTest = new DroolsTest();
